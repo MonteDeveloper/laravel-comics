@@ -8,6 +8,12 @@
             <div>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, delectus ad esse illum omnis earum eligendi sint a minus quasi, inventore nulla autem. Maxime voluptatem eligendi veniam voluptates. Soluta, sunt!</p>
             </div>
+            @foreach ($comics as $comic)
+                <div>
+                    {{$comic["title"]}}
+                    <img class="comicCover" src="{{$comic["thumb"]}}" alt="comic">
+                </div>
+            @endforeach
         </div>
     </div>
 
